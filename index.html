@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .content{
-            background: url('img/flag-hack.jpg') center center no-repeat fixed ;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        
-        .intro{
-            border-radius: 30px;
-        }
-        .centralizado{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 1.5%;
-            
-        }
+        ::cue {
+  color: yellow;
+  font-size: 1.3em
+}
+/* Style blocks cannot use blank lines nor "dash dash greater than" */
 
-        .banner{
-            margin-top: 1%;;
-        }
-      
+::cue(b) {
+  color: yellow;
+}
+
+
+      .content{
+      background: url('img/flag-hack.jpg') center center no-repeat fixed ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+      .intro{
+      border-radius: 30px;
+      }
+      .centralizado{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5%;
+      }
+      .banner{
+      margin-top: 1%;;
+      }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
-</head>
-<body class="content">
-    <center><img src="img/banner.png" width="50%" height="50%" class="banner"></center>
+  </head>
+  <body class="content">
+    <center><img src="img/banner.png" width="50%" height="50%" class="banner intro"></center>
     <div class="centralizado">
-        <center>
-            <div >
-                <video src="video/intro.mp4" class="intro" controls autoplay="autoplay" id="intro"></video>
-
-               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BAtzqmek1sM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            -->
-            </div>
-            <h4>1) Adcione o contato <img src="img/zap.ico" width="40px" height="40px"> 21920207165</h4>
-            <h4>2) Envie a mensagem "EU QUERO" para este contato</h4>
-        </center>
-    </div>
-
-    <script>
-        document.getElementById('vid').play();
-    </script>
-
-    
+      <center>
         <div >
-           
-        
+          <video controls autoplay id="vid" muted width="560" height="315" class="intro">
+            <source src="video/intro.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
+            Your browser does not support the video tag.
+          </video>
         </div>
-
-</body>
+        <h4>1) Adcione o contato <img src="img/zap.ico" width="40px" height="40px"> 21920207165</h4>
+        <h4>2) Envie a mensagem "EU QUERO" para este contato</h4>
+      </center>
+    </div>
+    <div >
+    </div>
+  </body>
 </html>
